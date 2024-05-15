@@ -4,7 +4,7 @@ import { RootState } from "./../../app/store";
 import { createSlice } from "@reduxjs/toolkit";
 import { IGenre } from "./../../type/type";
 
-const initialState: { genres: IGenre[]; Genres: IGenre } = {
+const initialState: { genres: IGenre[]; genre: IGenre } = {
     genres: [
         { id: 1, name: "Triller" },
         { id: 2, name: "Fantasy" },
@@ -12,10 +12,10 @@ const initialState: { genres: IGenre[]; Genres: IGenre } = {
         { id: 4, name: "Poetry" },
         { id: 5, name: "Absurd" },
     ],
-    Genres: {} as IGenre,
+    genre: {} as IGenre,
 };
 
-const genreslice = createSlice({
+const genreSlice = createSlice({
     name: "genres",
     initialState,
     reducers: {
@@ -30,15 +30,15 @@ const genreslice = createSlice({
         findGenresById: (state, action) => {
             const data = state.genres.find((elm) => elm.id == action.payload);
             if (data) {
-                state.Genres = data;
+                state.genre = data;
             }
         },
     },
 });
 
 export const { addGenres, deleteGenresById, findGenresById } =
-    genreslice.actions;
+    genreSlice.actions;
 
-export const selectGenres = (state: RootState) => state.Genres;
+export const selectGenres = (state: RootState) => state.genre;
 
-export default genreslice.reducer;
+export default genreSlice.reducer;
