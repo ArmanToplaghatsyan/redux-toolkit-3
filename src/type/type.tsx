@@ -8,5 +8,5 @@ export interface IFilm {
     name: string;
     genres: string[];
     img: string;
-    feedback: string;
+    feedback: string[];
 }

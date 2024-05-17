@@ -1,0 +1,26 @@
+.menu {
+  background-color: #0f0f10;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 90%;
+  margin: auto;
+  min-height: 30%;
+  border-radius: 10px;
+
+  nav {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+      column-gap: 40px;
+      font-size: 20px;
+      a {
+        color: rgb(194, 198, 202);
+        transition: 0.5s;
+        &:hover {
+          color: aliceblue;
+        }
+      }
+    }
+  }
+}

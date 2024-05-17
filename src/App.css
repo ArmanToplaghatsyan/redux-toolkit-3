@@ -4,6 +4,8 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
-  text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+  background-color: #000;
 }

@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./style.scss"
 
 export const Menu: React.FC = React.memo((): JSX.Element => {
     return (
-        <div>
+        <div className="menu">
             <nav>
                 <ul>
                     <li><Link to={'/'}>Films</Link></li>

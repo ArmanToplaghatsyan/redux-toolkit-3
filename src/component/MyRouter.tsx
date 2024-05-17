@@ -20,7 +20,7 @@ export const MyRouter = React.memo(() => {
                 { path: "detailsFilms/:id", element: <DetailsFilms /> },
                 { path: "genres", element: <Genres /> },
                 { path: "addGenre", element: <AddGenre /> },
-                { path: "detailsGenres/:id", element: <DetailsGenres /> },
+                { path: "detailsGenres/:name", element: <DetailsGenres /> },
             ],
         },
         {

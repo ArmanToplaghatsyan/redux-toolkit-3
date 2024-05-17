@@ -1,0 +1,57 @@
+.film {
+  background-color: #0f0f10;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 90%;
+  margin: auto;
+  color: aliceblue;
+  justify-content: center;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  min-height: 650px;
+  grid-auto-rows: minmax(200px, 300px);
+  gap: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  > div {
+    border-radius: 20px;
+    position: relative;
+    border: 3px solid #000;
+    overflow: hidden;
+    > img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+    > div {
+      position: absolute;
+      border-radius: 20px;
+      bottom: 0px;
+      left: 0px;
+      padding: 10px 10px 0;
+      margin-bottom: -21px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 5px;
+      flex-wrap: wrap;
+      background-color: #0008;
+      justify-content: flex-start;
+      h3 {
+        font-size: 25px;
+        font-family: monospace;
+      }
+      >div{
+        display: flex;
+        justify-content: end;
+        width: 100%;
+      }
+
+    }
+    &:hover .d1 {
+      padding-bottom: 50px;
+      transition: 0.4s;
+    }
+  }
+}

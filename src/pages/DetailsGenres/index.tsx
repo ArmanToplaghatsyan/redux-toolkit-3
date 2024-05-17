@@ -1,23 +1,36 @@
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate, useParams } from "react-router-dom";
-import { selectGenres } from "../../features/genre/genreSlice";
-import { IFilm, IGenre } from "../../type/type";
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate, useParams } from 'react-router-dom';
+import { selectGenres } from '../../features/genre/genreSlice';
+import { IFilm, IGenre } from '../../type/type';
+import { selectFilm } from '../../features/film/filmSlice';
 
 export const DetailsGenres: React.FC = React.memo((): JSX.Element => {
+  const { name } = useParams();
+  console.log(name);
+  const dispatch = useDispatch();
+  const { films } = useSelector(selectFilm);
 
-const {id} = useParams();
-const navigate = useNavigate();
-console.log(id);
-const [genre, setGenre] = useState<IGenre>({} as IGenre)
-const dispatch = useDispatch();
+  const [clone, setClone] = useState<IFilm[]>([]);
 
-console.log(genre);
+  useEffect(() => {
+    if (name) setClone([...films.filter((elm) => elm.genres.includes(name))]);
+  }, [name]);
 
-
-    return (
-        <div>
-            <h2>{genre.name}</h2>
-        </div>
-    );
+  console.log(clone);
+  
+  return (
+    <div>
+       {clone.map(elm=>{
+        return(
+            <div key={elm.id}>
+                <h3>Name - {elm.name}</h3>
+                <h4>Genres - {elm.genres}</h4>
+                <p>Feedback - {elm.feedback}</p>
+                <img src={elm.img} width={500} height={600}/>
+            </div>
+        )
+       })}
+    </div>
+  );
 });

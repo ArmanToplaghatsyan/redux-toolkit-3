@@ -24,7 +24,7 @@ export const Genres: React.FC = React.memo((): JSX.Element => {
                                 &times;
                             </button>
                             <hr />
-                            <Link to={'/detailsGenres/'+elm.id}>See More</Link>
+                            <Link to={'/detailsGenres/'+elm.name}>See More</Link>
                             <hr />
                         </div>
                     )
