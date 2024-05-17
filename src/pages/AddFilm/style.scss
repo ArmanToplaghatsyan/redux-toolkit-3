@@ -1,0 +1,48 @@
+.films {
+    background-color: #0f0f10;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    width: 90%;
+    margin: auto;
+    color: aliceblue;
+    justify-content: center;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: auto;
+    min-height: 650px;
+    grid-auto-rows: minmax(200px, 300px);
+    gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    gap: 20px;
+
+    form {
+        display: grid;
+        padding: 100px;
+        justify-items: center;
+
+        button {
+            background-color: rgb(32, 36, 43);
+            padding: 5px 30px;
+            border: none;
+            outline: none;
+            margin-left: 55px;
+            border-radius: 5px;
+            font-size: 20px;
+            color: aliceblue;
+            transition: 0.8s;
+            margin-top: 5px;
+            &:hover {
+                background-color: aliceblue;
+                color: rgb(32, 36, 43);
+            }
+        }
+        input{
+            padding: 5px 60px;
+            border: 3px solid rgb(32, 36, 43);
+            border-radius: 5px;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+}

@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { addFilm } from "../../features/film/filmSlice";
 import { IFilm } from "../../type/type";
+import './style.scss'
 
 export const AddFilm: React.FC = React.memo((): JSX.Element => {
     const dispatch = useDispatch();
@@ -15,8 +16,9 @@ export const AddFilm: React.FC = React.memo((): JSX.Element => {
     };
 
     return (
-        <div>
-            <form onSubmit={handleSubmit(save)}>
+        <div className="films">
+            <div>
+                <form onSubmit={handleSubmit(save)}>
                 <h2>Add Film</h2>
                 <label>name</label>
                 <input type="text" placeholder="name" {...register('name', { required: 'Enter name' })} />
@@ -31,7 +33,8 @@ export const AddFilm: React.FC = React.memo((): JSX.Element => {
                 <input type="text" placeholder="feedback" {...register('feedback', { required: 'Enter feedback' })} />
                 {errors.feedback && <p>{errors.feedback.message}</p>}
                 <button>save</button>
-            </form>
+            </form>  
+            </div>
         </div>
     );
 });
