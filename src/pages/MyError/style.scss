@@ -1,0 +1,49 @@
+.error {
+    background-color: #0f0f10;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 500px;
+    margin: auto;
+    color: aliceblue;
+    justify-content: center;
+    display: flex;
+    min-height: 650px;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    row-gap: 10px;
+
+  a {
+        font-size: 40px;
+        color: gray;
+        transition: 0.2s;
+        background-color: rgb(80, 80, 80);
+        width: 150px;
+        text-align: center;
+        height: 55px;
+        border-radius: 5px;
+        &:hover {
+            color: aliceblue;
+            font-weight: 800;
+            background-color: rgb(27, 24, 37);
+            border-radius: 10px;
+        }
+    }
+    
+     
+
+
+
+    h2{
+        font-size: 65px;
+        color: red;
+    }    
+    h3{
+        font-size: 40px;
+    }
+    p{
+        font-size: 30px;
+        color: gray;
+    }
+}

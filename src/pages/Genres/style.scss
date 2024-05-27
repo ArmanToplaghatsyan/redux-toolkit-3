@@ -1,0 +1,86 @@
+.genres {
+    background-color: #0f0f10;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    color: aliceblue;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    min-height: 80%;
+    min-width: 90%;
+    row-gap: 30px;
+
+    div{
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(58, 58, 58);
+        border-radius: 10px;
+        min-height: 300px;
+        min-width: 300px;
+
+
+        > div {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(223, 223, 223);
+        min-width: 90%;
+        min-height: 200px;
+        border-radius: 10px;
+
+        a {
+            color: gray;
+            transition: 0.2s;
+            background-color: rgb(80, 80, 80);
+            text-align: center;
+            border-radius: 5px;
+            font-size: 25px;
+            min-height: 50px;
+            text-align: center;
+            width: 180px;
+            &:hover {
+                color: aliceblue;
+                font-weight: 800;
+                background-color: rgb(27, 24, 37);
+                border-radius: 10px;
+            }
+        }
+        button {
+            background-color: rgb(32, 36, 43);
+            margin-top: 10px;
+            width: 180px;
+            min-height: 50px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            font-size: 50px;
+            color: aliceblue;
+            transition: 0.8s;
+            font-size: 30px;
+
+            &:hover {
+                background-color: aliceblue;
+                color: rgb(32, 36, 43);
+            }
+        }
+    }
+
+    h2 {
+        font-size: 50px;
+        color: aliceblue;
+    }
+}
+
+    }
+
+    

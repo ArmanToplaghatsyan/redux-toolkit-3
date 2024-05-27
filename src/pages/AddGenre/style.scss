@@ -1,42 +1,48 @@
-.films {
+.addgenres {
     background-color: #0f0f10;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    width: 90%;
+    min-width: 500px;
     margin: auto;
     color: aliceblue;
     justify-content: center;
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
     min-height: 650px;
-    grid-auto-rows: minmax(200px, 300px);
-    gap: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
-    gap: 20px;
 
     form {
-        display: grid;
-        padding: 100px;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+
         justify-items: center;
-        min-height: 650px;
+        width: 600px;
+        min-height: 400px;
+        background-color: #06060a;
+        border-radius: 10px;
 
         h2 {
-            font-size: 40px;
             color: azure;
-            margin-bottom: 20px;
+            font-size: 50px;
         }
 
         button {
             background-color: rgb(32, 36, 43);
-            margin-top: 10px;
-            padding: 5px 40px;
+      
             border: none;
             outline: none;
-            border-radius: 5px;
             font-size: 20px;
             color: aliceblue;
             transition: 0.8s;
+            width: 130px;
+            height: 40px;
+            border-radius: 5px;
 
             &:hover {
                 background-color: aliceblue;
@@ -44,27 +50,27 @@
             }
         }
         label {
-            font-size: 18px;
+            font-size: 20px;
         }
 
         input {
-            padding: 5px 60px;
             border: 3px solid rgb(32, 36, 43);
+            height: 35px;
             border-radius: 5px;
-            font-size: 15px;
+            outline: none;
             text-align: center;
             background-color: aliceblue;
             transition: 0.4s;
+            font-size: 20px;
+            color:  rgb(32, 36, 43);
             &:hover {
                 border-color: aliceblue;
                 background-color: rgb(32, 36, 43);
             }
         }
         p {
-            margin-bottom: 10px;
-            margin-top: 10px;
-            font-size: 20px;
             color: red;
+            font-size: 30px;
         }
     }
 }

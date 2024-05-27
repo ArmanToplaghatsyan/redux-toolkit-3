@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { addGenres } from "../../features/genre/genreSlice";
 import { IFilm, IGenre } from "../../type/type";
+import './style.scss';
 
 export const AddGenre: React.FC = React.memo((): JSX.Element => {
     const dispatch = useDispatch();
@@ -19,7 +20,7 @@ export const AddGenre: React.FC = React.memo((): JSX.Element => {
     };
 
     return (
-        <div>
+        <div className="addgenres">
             <form onSubmit={handleSubmit(save)}>
                 <h2>Add Genre</h2>
                 <label>name</label>
