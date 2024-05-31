@@ -45,7 +45,7 @@
             text-align: center;
             border-radius: 5px;
             font-size: 25px;
-            min-height: 50px;
+            padding: 7px 0;
             text-align: center;
             width: 180px;
             &:hover {
@@ -65,12 +65,13 @@
             border-radius: 5px;
             font-size: 50px;
             color: aliceblue;
-            transition: 0.8s;
-            font-size: 30px;
+            transition: 0.5s;
+            font-size: 35px;
 
             &:hover {
                 background-color: aliceblue;
                 color: rgb(32, 36, 43);
+                font-weight: 800;
             }
         }
     }
